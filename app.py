@@ -10,5 +10,5 @@ def hello_world():
 def dim_cp():
     return render_template('dim_cp.html')
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(host="0.0.0.0")
