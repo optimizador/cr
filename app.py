@@ -9,3 +9,6 @@ def hello_world():
 @app.route('/dimensionamiento/cloud_pak')
 def dim_cp():
     return render_template('dim_cp.html')
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")

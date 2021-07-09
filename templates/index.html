@@ -24,7 +24,7 @@
 {% block content %}
         <div class="gray-bg">
         </div>
-            
+
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 
@@ -80,7 +80,9 @@
             alm = document.getElementById("mes_alm");
             calculo = 0.08*tra.value + 0.05*alm.value;
             console.log(calculo);
+
             document.getElementById("cal").innerHTML="<div class='col-lg-6'><div class='widget blue-bg no-padding'><div class='p-m'><h1 class='m-xs'>$"+calculo+"</h1><h3 class='font-bold no-margins'>Saldo mensual (USD)</h3></div></div>";
+
         }
     </script>
 
