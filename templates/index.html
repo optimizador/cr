@@ -1,3 +1,4 @@
+{% extends "layout.html" %}
 <!DOCTYPE html>
 <html>
 
@@ -20,35 +21,10 @@
 
 <body>
 
+{% block content %}
+        <div class="gray-bg">
+        </div>
 
-        <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom" action="search_results.html">
-                <div class="form-group">
-                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                </div>
-            </form>
-        </div>
-            <ul class="nav navbar-top-links navbar-right">
-                
-        </nav>
-        </div>
-            <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-9">
-                    <h2>Dimensionamiento</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="https://ui.9sxuen7c9q9.us-south.codeengine.appdomain.cloud/">Dimensionamiento</a>
-                        </li>
-                        <li class="active">
-                            <strong>Containers Registry</strong>
-                        </li>
-                    </ol>
-                </div>
-            </div>
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 
@@ -78,7 +54,7 @@
                             </tr>
                             </tbody>
                         </table>
-                        <button type="button" onclick="Calc_dim();" class="btn btn-outline btn-primary">Calcular dimensonamiento</button>
+                        <button type="button" onclick="Calc_dim();" class="btn btn-outline btn-success">Calcular dimensonamiento</button>
                         <div id="cal">
                             
                         </div>
@@ -104,7 +80,9 @@
             alm = document.getElementById("mes_alm");
             calculo = 0.08*tra.value + 0.05*alm.value;
             console.log(calculo);
-            document.getElementById("cal").innerHTML="<div class='col-lg-6'><div class='widget navy-bg no-padding'><div class='p-m'><h1 class='m-xs'>$"+calculo+"</h1><h3 class='font-bold no-margins'>Precio mensual (USD)</h3></div></div>";
+
+            document.getElementById("cal").innerHTML="<div class='col-lg-6'><div class='widget blue-bg no-padding'><div class='p-m'><h1 class='m-xs'>$"+calculo+"</h1><h3 class='font-bold no-margins'>Saldo mensual (USD)</h3></div></div>";
+
         }
     </script>
 
@@ -291,7 +269,5 @@
         });
     </script>
 
+{% endblock %}
 
-</body>
-
-</html>
