@@ -78,7 +78,7 @@
             calculo = 0.08*tra.value + 0.05*alm.value;
             console.log(calculo);
 
-            document.getElementById("cal").innerHTML="<div class='col-lg-6'><div class='widget blue-bg no-padding'><div class='p-m'><h1 class='m-xs'>$"+calculo+"</h1><h3 class='font-bold no-margins'>Saldo mensual (USD)</h3></div></div><table id='simpleTable1' class='hidden'><tr><th>Componente</th><th>Precio mensual USD</th><th>Precio mensual USD</th></tr><tr><td>Container Registry</td><td>$"+calculo+"</td><td>$"+calculo+"</td></tr></table>";
+            document.getElementById("cal").innerHTML="<div class='col-lg-6'><div class='widget blue-bg no-padding'><div class='p-m'><h1 class='m-xs'>$"+calculo+"</h1><h3 class='font-bold no-margins'>Saldo mensual (USD)</h3></div></div><table id='simpleTable1' class='hidden'><tr><th bgcolor='#00008B' style='color: white;'>Componente</th><th bgcolor='#00008B' style='color: white;'>Precio mensual USD</th><th bgcolor='#00008B' style='color: white;'>GB de trafico de extraccion (solicitado)</th><th bgcolor='#00008B' style='color: white;'>GB de meses de almacenamiento (solicitado)</th></tr><tr><td>Container Registry</td><td>$"+calculo+"</td><td>$"+tra.value+" GB</td><td>$"+alm.value+" GB</td></tr></table>";
 
         }
     </script>
